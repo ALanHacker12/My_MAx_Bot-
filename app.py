@@ -6,8 +6,9 @@ import re
 
 import os
 
-TOKEN = "f9LHodD0cOIGHfDooh5fax5zJxeBU3LX6PTWHhDqg-t9aEeBoKW2VT643bHy92YUWARvQkmZtfy-1CRGm6Tr"
-ADMIN_ID = 59879495
+# Берем токен и ID из переменных окружения
+TOKEN = os.getenv('MAX_TOKEN')
+ADMIN_ID = int(os.getenv('ADMIN_ID', 59879495))
 
 app = Flask(__name__)
 
